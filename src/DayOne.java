@@ -15,7 +15,7 @@ public class DayOne {
             System.out.println("a is equal to b");
         }*/
 
-        int a = 3;
+        /* int a = 3;
         int b = 2;
         if (b > a && a > 0) {
             System.out.println("b is bigger than a and a is positive");
@@ -25,7 +25,14 @@ public class DayOne {
             System.out.println("a and b are either equal or both are negative");
         } else {
             System.out.println("No specific conditions are met");
-        }
+        }*/
+
+        //Tekst
+/* String nimi = "Triin";
+        String vanus = "25";
+        String elukoht = "Tallinn";
+        String koma = ",";
+        System.out.println(nimi + koma + vanus + koma + elukoht); */
 
     }
 }
