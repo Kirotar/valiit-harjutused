@@ -3,8 +3,8 @@ public class DayOne {
         // System.out.println("Lea");
         /*see on koodibloki kommenteerimiseks*/
         //If - conditions
-        int a = 1;
-        int b = 2;
+        int a = 2;
+        int b = 3;
         if (b > a) {
             System.out.println("b on suurem kui a");
         } else if (b < a) {
