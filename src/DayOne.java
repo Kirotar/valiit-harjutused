@@ -33,6 +33,5 @@ public class DayOne {
         String elukoht = "Tallinn";
         String koma = ",";
         System.out.println(nimi + koma + vanus + koma + elukoht); */
-
     }
 }
