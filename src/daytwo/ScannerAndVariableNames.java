@@ -11,7 +11,7 @@ public class ScannerAndVariableNames {
 
     public static void main(String[] args) {
         //Scanneriga erinev info
-        Scanner scanner = new Scanner(System.in);
+/*Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
         String name = scanner.nextLine();
         System.out.println("Enter your age: ");
@@ -27,7 +27,7 @@ public class ScannerAndVariableNames {
         int kokkuliidetudNumbrid = n + n1;
         System.out.println("Your numbers are: " + kokkuliidetudNumbrid + ", " + n + " and " + n1);
         n1++;
-        System.out.println("Your next number is: " + n1);
+        System.out.println("Your next number is: " + n1);*/
 
         //Changing all variable names Shift+F6, refactor or Rename usages
         /*String user = "Joe";
