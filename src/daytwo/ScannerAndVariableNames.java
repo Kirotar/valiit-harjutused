@@ -3,6 +3,8 @@ package daytwo;
 import java.util.Scanner; //imported class
 
 public class ScannerAndVariableNames {
+    int number; //instance variables
+    static String name = "John"; //static variable
 
     //naming constants
    /* public static final double PI = 3.14159265358979323846;
@@ -10,6 +12,9 @@ public class ScannerAndVariableNames {
     public final int MAX_USERS = 100;*/
 
     public static void main(String[] args) {
+
+        //Local variables are inside method, constructor, block (can't be accessed outside)
+
         //Scanneriga erinev info
 /*Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your name: ");
@@ -35,6 +40,14 @@ public class ScannerAndVariableNames {
         int lenghtOfMan = user.length();
         System.out.println(lenghtOfMan);*/
 
-
+        System.out.println(name);
     }
+
+    public double multiply() {
+        double a = 2; //local variable
+        double b = 4;
+        return a * b;
+    }
+
 }
+
