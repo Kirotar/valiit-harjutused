@@ -9,7 +9,7 @@ public class ExercisesDayTwo {
 
         //Harjutus 2
         Scanner sc = new Scanner(System.in);
-        System.out.println("Insert a number.");
+       /* System.out.println("Insert a number.");
         int num = sc.nextInt();
         System.out.println("Insert another number.");
         int num2 = sc.nextInt();
@@ -18,7 +18,7 @@ public class ExercisesDayTwo {
         int mul = num * num2;
         int div = num / num2;
         System.out.println("Addition: " + sum + ", subtraction: " + sub + ", multiplication: " + mul + ", division " + div);
-
+*/
         //Harjutus 3
         /*System.out.println("Insert a number.");
         int num3 = sc.nextInt();
@@ -46,14 +46,42 @@ public class ExercisesDayTwo {
             System.out.println("The numbers are equal");
         }*/
 
-        /*int a = 9;
-        int b = 2;
-        int c = 3;
-        if (a > b) {
-            System.out.println("a");
-            if (b > c) {
-                System.out.println("b");
-                }*/
-            }
-        }
+        //Harjutus 5
+        /*System.out.println("Enter your name: ");
+        String name = sc.nextLine();
+        System.out.println("Enter your age: ");
+        int age = sc.nextInt();
+        if (age >= 18) {
+            System.out.println("Hello " + name + ". You are an adult!");
+        } else if (age < 18 && age >= 12) {
+            System.out.println("Hello " + name + ". You are a teenager!");
+        } else {
+            System.out.println("Hello " + name + ". You are a kid!");
+        }*/
+//Harjutus 6
+        String correctUsername = "user123";
+        String correctPassword = "pass123";
+
+        System.out.println("Welcome. \nEnter your username: ");
+        String name = sc.nextLine();
+        System.out.println("Enter your password: ");
+        String password = sc.nextLine();
+
+        boolean success = name.equals(correctUsername) && password.equals(correctPassword);
+
+        //if ((age >= 18)   correctUsername) {
+            System.out.println("Login successful.");
+        } else if (age < 18 && correctUsername) {
+            System.out.println("Login unsuccessful, you must be 18 or older.");
+        } else {
+            System.out.println("Login unsuccessful, invalid credentials.");
+        }//
+        System.out.println("Enter your age: ");
+        int age = sc.nextInt();
+
+
+
+    }
+}
+
 
