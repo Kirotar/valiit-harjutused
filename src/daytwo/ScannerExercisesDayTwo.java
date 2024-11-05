@@ -2,7 +2,7 @@ package daytwo;
 
 import java.util.Scanner;
 
-public class ExercisesDayTwo {
+public class ScannerExercisesDayTwo {
     public static void main(String[] args) {
         //Harjutus 1
         System.out.println("Hello, World!");
@@ -69,18 +69,17 @@ public class ExercisesDayTwo {
 
         boolean success = name.equals(correctUsername) && password.equals(correctPassword);
 
-        //if ((age >= 18)   correctUsername) {
-            System.out.println("Login successful.");
-        } else if (age < 18 && correctUsername) {
-            System.out.println("Login unsuccessful, you must be 18 or older.");
+        if (success == true) {
+            System.out.println("Enter your age: ");
+            int age = sc.nextInt();
+            if (age > 18) {
+                System.out.println("Login successful.");
+            } else {
+                System.out.println("Login unsuccessful, you must be 18 or older.");
+            }
         } else {
             System.out.println("Login unsuccessful, invalid credentials.");
-        }//
-        System.out.println("Enter your age: ");
-        int age = sc.nextInt();
-
-
-
+        }
     }
 }
 
