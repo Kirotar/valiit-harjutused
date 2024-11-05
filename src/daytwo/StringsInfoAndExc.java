@@ -33,10 +33,62 @@ System.out.println(fullName);
       //  indexOf() //uuri ise edasi
         */
 
+        /*
         //Harjutus 1
         String helloWorld = "hello world";
         System.out.println(helloWorld.toUpperCase());
 
+        //Harjutus 2
+        String helloWorld2 = "HELLO WORLD";
+        System.out.println(helloWorld2.toLowerCase());
 
+        //Harjutus 3
+        System.out.println(helloWorld.contains("world"));
+
+        //Harjutus 4
+        char result = helloWorld.charAt(0);
+        System.out.println(result);
+
+        //Harjutus 5
+        String replacedHello = "Hello World";
+        System.out.println(replacedHello.replace('o', 'õ'));
+
+        //Kinnistan
+        String insects = "butterfly";
+        char returnbug = insects.charAt(5);
+        System.out.println(returnbug);
+
+        String text = "lotsoftext";
+        System.out.println(text.charAt(0));
+        char re = text.charAt(5);
+        System.out.println(re);
+
+
+        System.out.println(insects.replace('t', 'y'));
+        */
+        //Harjutus 6
+        String helloworld = "Hello, World!";
+        System.out.println(helloworld.startsWith("Hello"));
+        System.out.println(helloworld.endsWith("World!"));
+        System.out.println(helloworld.startsWith("Hello") && helloworld.endsWith("World!"));
+
+        //Harjutus 7
+        System.out.println(helloworld.substring(7, 12));
+
+        //Harjutus 8
+        String spell = "abracadabra";
+        int first = spell.indexOf('a');
+        int last = spell.lastIndexOf('a');
+
+        System.out.println(spell.indexOf('a'));
+        System.out.println(spell.lastIndexOf('a'));
+
+        System.out.println("First instance on 'a' is: " + first + " and last instance of 'a' is: " + last);
+
+        //Harjutus 9
+        String sentence = "Java is fun.";
+        String rep = "fun";
+        System.out.println(sentence.replaceFirst(rep, "awesome"));
     }
+
 }
