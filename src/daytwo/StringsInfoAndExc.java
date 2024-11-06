@@ -38,6 +38,10 @@ System.out.println(fullName);
         String helloWorld = "hello world";
         System.out.println(helloWorld.toUpperCase());
 
+        //Punktiga saab panna mitu erinevat funktsiooni külge.
+        Kui tahta ilusamalt ja panna mitu asja kokku, siis eraldi defineerida nt 'uppercase' ja printida siis
+        ("text" + uppercase + midagi veel jne)
+
         //Harjutus 2
         String helloWorld2 = "HELLO WORLD";
         System.out.println(helloWorld2.toLowerCase());
@@ -72,6 +76,11 @@ System.out.println(fullName);
         System.out.println(helloworld.endsWith("World!"));
         System.out.println(helloworld.startsWith("Hello") && helloworld.endsWith("World!"));
 
+        boolean starts = helloworld.startsWith("Hello");
+        boolean ends = helloworld.endsWith("World!");
+        boolean result = starts && ends;
+
+
         //Harjutus 7
         System.out.println(helloworld.substring(7, 12));
 
@@ -89,6 +98,13 @@ System.out.println(fullName);
         String sentence = "Java is fun.";
         String rep = "fun";
         System.out.println(sentence.replaceFirst(rep, "awesome"));
+
+        /*parem on mitte souti panna hardcoded asju vaid iga asi defineerida enne ära, näiteks:
+        String target =
+        String replacement =
+        String updatedSentence= sentence.replace(target, replacement)
+        Ja siis alles print
+        */
     }
 
 }
