@@ -1,6 +1,6 @@
 package daythree;
 
-public class Methods {
+public class MethodsPractice {
     public static void main(String[] args) {
         //Return example, simulate database:
 
