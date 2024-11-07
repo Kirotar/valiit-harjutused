@@ -1,16 +1,51 @@
-package daythree;
+package daythreeandfour;
 
 //shortcut ctrl + shift + numpad / + wrapin */
 public class LoopsPractice {
     public static void main(String[] args) {
+        findFirstEven();
+        printOddNumbers();
+        printMultiples();
+    }
 
 
-        /*loopControls();
-        printNumbers();
-        printCarArray();
-        addTogether();
-        evenNumbers();
-        multiplicationTable();*/
+    private static void findFirstEven() {
+//Exercise 1
+        int[] numbers = {7531, 5875, 636, 19, 1, 30, 21};
+        for (int x : numbers) {
+            if (x % 2 == 0) {
+                System.out.println("The first even number is: " + x);
+                break;
+            }
+        }
+    }
+
+    private static void printOddNumbers() {
+      //Exercise 2
+        for (int i = 1; i <= 20; i+=2){
+            if (i % 5 == 0){
+                continue;
+            }
+            System.out.println("Odd numbers are: " + i);
+        }
+    }
+    private static void printMultiples() {
+        for (int i = 3; i <= 30; i+=3){
+            if (i % 6 == 0){
+                continue;
+            }
+            System.out.println("Multiples of 3 are:" + i);
+        }
+    }
+
+
+    private static int rollDice() {
+        /*INTO MAIN: int diceRoll = rollDice();
+        System.out.println("The dice number is " + diceRoll);*/
+
+        return (int) (Math.random() * 6) + 1; //"return (int) (Math.random() * 6 + 1)"; - also gives result from 1 to 6, but
+        // has worse distribution, 6 is less likely to appear
+        //(int) in brackets means Type Casting double into int.
     }
 
     private static void loopControls() {
