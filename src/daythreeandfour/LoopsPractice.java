@@ -10,7 +10,6 @@ public class LoopsPractice {
 
 
     private static void findFirstEven() {
-//Exercise 1
         int[] numbers = {7531, 5875, 636, 19, 1, 30, 21};
         for (int x : numbers) {
             if (x % 2 == 0) {
@@ -21,12 +20,11 @@ public class LoopsPractice {
     }
 
     private static void printOddNumbers() {
-      //Exercise 2
         for (int i = 1; i <= 20; i+=2){
             if (i % 5 == 0){
                 continue;
             }
-            System.out.println("Odd numbers are: " + i);
+            System.out.println("Odd numbers is: " + i);
         }
     }
     private static void printMultiples() {
@@ -34,7 +32,7 @@ public class LoopsPractice {
             if (i % 6 == 0){
                 continue;
             }
-            System.out.println("Multiples of 3 are:" + i);
+            System.out.println("Multiples of 3 is:" + i);
         }
     }
 
