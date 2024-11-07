@@ -1,4 +1,4 @@
-package daythree;
+package daythreeandfour;
 import java.util.Scanner;
 
 public class Fun {
