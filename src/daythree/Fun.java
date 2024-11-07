@@ -5,9 +5,53 @@ import java.util.Scanner;
 public class Fun {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        askUsername(sc); //Pass sc on so there are not multiple instances
+        sc.close();       // Close Scanner after use
+    }
+    //Exercise where the user inserts name, age using different methods
+    private static void askUsername(Scanner sc) {
+        System.out.print("Enter your username: ");
+        String user = sc.nextLine();
+askPassword(user,sc);
+    }
+
+    private static void askPassword(String user, Scanner sc) {
+        System.out.print("Enter your password: ");
+        String password = sc.nextLine();
+checkCredentials(password, user, sc);
+    }
+
+    private static void checkCredentials(String pass, String user, Scanner sc) {
+        String trueUsername = "user123";
+        String truePassword = "pass123";
+        boolean passwordMatch = truePassword.equals(pass);
+        boolean userMatch = trueUsername.equals(user);
+
+        boolean success = passwordMatch && userMatch;
+        if (success) {askAge(sc);
+        }else{
+            System.out.println("Password or user does not match");
+        }
+
+    }
+private static void askAge (Scanner sc){
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+        if (age >= 18) {
+            System.out.println("Login successful");
+        } else{
+            System.out.println("Login failed, you must be 18 or older.");
+        }
+}
+
+    // Method asks for username, sends to next method which asks for password? Or both in the same?
+    //Then sends to check if correct and asks for age or ends program.
+
+    private static void fun1() {
+        Scanner sc = new Scanner(System.in);
 
         //Exercise where the user inserts name, age and then birth year
-       /* String truename = "John";
+       String truename = "John";
         int trueage = 22;
         int currentYear = 2024;
 
@@ -29,7 +73,6 @@ public class Fun {
         } else {
             System.out.println("You are not verified");
         }
-*/
 
 //Exercise to evaluate how strong is a password.
         System.out.println("Insert a password: ");
