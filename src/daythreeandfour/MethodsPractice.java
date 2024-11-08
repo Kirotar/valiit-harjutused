@@ -22,6 +22,20 @@ public class MethodsPractice {
         return age;
     }
 }
+//Return example:
+ /*   public static void main(String[] args) {
+        int result = sum(10); //Send 10 to method sum in place of k
+        System.out.println(result);
+    }
+    public static int sum(int k) {
+        if (k > 0) {
+            return k + sum(k - 1);
+        } else {
+            return 0; //Does the proccess and sends the calculated result back to 'int result =..'
+        }
+    }
+    Must be careful to not write program that never terminates!!
+}*/
 
 
         //Return example:
