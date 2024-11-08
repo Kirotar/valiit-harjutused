@@ -1,17 +1,41 @@
 package daythreeandfour;
+
 import java.util.Scanner;
 
 public class Fun {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-int result = calculatorTestAdd(3, 4);
-int result2 = calculatorTestMult(3, 9);
-
-       // askUsername(sc); //Pass sc on so there are not multiple instances
+        // askUsername(sc); //Pass sc on so there are not multiple instances
         sc.close();       // Close Scanner after use
+
+
+        //Understanding "return":
+
+        int result = calculatorTestAdd(3, 4);
+        int result2 = calculatorTestMult(3, 9);
+        //int result3 = calculatorTestMulti(2, 7); //Won't work, because void can't return int so result3 doesn't get a value added
+calculatorTestMulti(4, 5); //Void code just does it's thing once
+System.out.println(result); //Now I can do things with the returned value
+
+    }
+        //Simple calculator
+    private static int calculatorTestAdd(int first, int second) {
+        int sum = first + second;
+        System.out.println("Sum: " + sum);
+        return sum;
     }
 
-    //Simple calculator
+    private static int calculatorTestMult(int first, int second) {
+        int sum = first * second;
+        System.out.println("Sum: " + sum);
+        return sum;
+    }
+
+    //Does not work, because void can't return int:
+    private static void calculatorTestMulti(int first, int second) {
+        int sum = first * second;
+        System.out.println("Sum: " + sum);
+    }
     private static void numbers() {
         int a = 2;
         int b = 5;
@@ -23,18 +47,6 @@ int result2 = calculatorTestMult(3, 9);
         calculatorTestAdd(d, c);
         calculatorTestAdd(e, b);
     }
-
-    private static int calculatorTestAdd(int first, int second) {
-        int sum = first + second;
-        System.out.println("Sum: "+ sum);
-        return sum;
-    }
-    private static int calculatorTestMult(int first, int second) {
-        int sum = first * second;
-        System.out.println("Sum: "+ sum);
-        return sum;
-    }
-
     //Exercise where the user inserts name, age using different methods
     private static void askUsername(Scanner sc) {
         System.out.print("Enter your username: ");
