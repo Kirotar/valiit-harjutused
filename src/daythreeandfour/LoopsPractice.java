@@ -1,6 +1,6 @@
 package daythreeandfour;
 
-//shortcut ctrl + shift + numpad / + wrapin */
+//shortcut ctrl + shift + numpad / + wrap in */
 public class LoopsPractice {
     public static void main(String[] args) {
         findFirstEven();
@@ -8,35 +8,31 @@ public class LoopsPractice {
         printMultiples();
     }
 
-
     private static void findFirstEven() {
         int[] numbers = {7531, 5875, 636, 19, 1, 30, 21};
-        for (int x : numbers) {
+        for (int x : numbers) { //foreach loop
             if (x % 2 == 0) {
                 System.out.println("The first even number is: " + x);
                 break;
             }
         }
     }
-
     private static void printOddNumbers() {
-        for (int i = 1; i <= 20; i+=2){
-            if (i % 5 == 0){
+        for (int i = 1; i <= 20; i += 2) {
+            if (i % 5 == 0) {
                 continue;
             }
             System.out.println("Odd numbers is: " + i);
         }
     }
     private static void printMultiples() {
-        for (int i = 3; i <= 30; i+=3){
-            if (i % 6 == 0){
+        for (int i = 3; i <= 30; i += 3) {
+            if (i % 6 == 0) {
                 continue;
             }
-            System.out.println("Multiples of 3 is:" + i);
+            System.out.println("Multiples of 3 are:" + i);
         }
     }
-
-
     private static int rollDice() {
         /*INTO MAIN: int diceRoll = rollDice();
         System.out.println("The dice number is " + diceRoll);*/
