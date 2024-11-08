@@ -2,7 +2,7 @@ package daythreeandfour;
 
 import java.util.Scanner;
 
-public class Fun {
+public class ForFun {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // askUsername(sc); //Pass sc on so there are not multiple instances
