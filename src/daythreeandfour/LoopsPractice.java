@@ -3,9 +3,44 @@ package daythreeandfour;
 //shortcut ctrl + shift + numpad / + wrap in */
 public class LoopsPractice {
     public static void main(String[] args) {
-        findFirstEven();
+        sumOfNonNegative();
+        findFirstGreater();
+
+        /*findFirstEven();
         printOddNumbers();
-        printMultiples();
+        printMultiples();*/
+    }
+
+    private static void sumOfNonNegative() {
+        int[] numbers = {5, 12, 3, 7, -4, 8, 2};
+        int sum = 0;
+        for (int num : numbers) {
+            // if you add sum here, it will still add +4 as well as it has not hit break yet
+            if (num < 0) {
+                break;// stop summing if negative found
+            }
+            sum += num; // no 'int' !!!
+        }
+        System.out.println("Sum: " + sum);
+    }
+
+    private static void findFirstGreater() {
+        int[] numbers = {23, 45, 39, 51, 48, 60};
+        for (int greater : numbers) {
+            if (greater < 50) {
+                continue;
+            }
+            System.out.println("The first number greater than 50 in: " + greater);
+            break;
+        }
+        //alternative:
+        int[] numbers2 = {23, 45, 39, 51, 48, 60};
+        for (int greater2 : numbers2) {
+            if (greater2 > 50) {
+                System.out.println("The first number greater than 50 in: " + greater2);
+                break;
+            }
+        }
     }
 
     private static void findFirstEven() {
@@ -17,6 +52,7 @@ public class LoopsPractice {
             }
         }
     }
+
     private static void printOddNumbers() {
         for (int i = 1; i <= 20; i += 2) {
             if (i % 5 == 0) {
@@ -25,6 +61,7 @@ public class LoopsPractice {
             System.out.println("Odd numbers is: " + i);
         }
     }
+
     private static void printMultiples() {
         for (int i = 3; i <= 30; i += 3) {
             if (i % 6 == 0) {
@@ -33,6 +70,7 @@ public class LoopsPractice {
             System.out.println("Multiples of 3 are:" + i);
         }
     }
+
     private static int rollDice() {
         /*INTO MAIN: int diceRoll = rollDice();
         System.out.println("The dice number is " + diceRoll);*/
@@ -41,6 +79,10 @@ public class LoopsPractice {
         // has worse distribution, 6 is less likely to appear
         //(int) in brackets means Type Casting double into int.
     }
+    // Widening Casting (automatically) - converting a smaller type to a larger type size
+    //byte -> short -> char -> int -> long -> float -> double
+    //Narrowing Casting (manually) - converting a larger type to a smaller size type
+    //double -> float -> long -> int -> char -> short -> byte
 
     private static void loopControls() {
         //Example of break, e.g. we are looking for a specific number
