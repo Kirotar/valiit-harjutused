@@ -2,6 +2,7 @@ package dayfive;
 
 public class ShorthandIfAndSwitch {
     public static void main(String[] args) {
+
     }
     private static void aboutConditionals() {
 
