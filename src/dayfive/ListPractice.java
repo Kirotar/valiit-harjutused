@@ -13,21 +13,24 @@ public class ListPractice {
     Most important methods: add(), get(), remove(), set()
      */
     public static void main(String[] args) {
-          /*  KODUTÖÖ List<Integer> numbers = new ArrayList<>();
+        /*  //KODUTÖÖ
+        List<Integer> numbers = new ArrayList<>();
 
             for (int i = 1; i <= 10; i++) {
                 numbers.add(i);
             }
+            //
         //Listi suurus on 10 aga elemente on 0 1 2 3 4 5 6 7 8 9 seega ta ei saagi 10 kohta üldse kätte
 
             for (int i = numbers.size(); i >= 0; i--) {
-                if (numbers.get(i) % 2 == 0) {
+                if (numbers.get(--i) % 2 == 0) { //probleem tekib siin, i kohal 10 ei ole sest lõpeb nr 9-ga
+                    System.out.println(i);
                     numbers.remove(i);
                 }
             }
 
-            System.out.println("List after removing even numbers: " + numbers);*/
-        }
+            System.out.println("List after removing even numbers: " + numbers);
+        }*/
 
     private static void numbersList() {
         ArrayList<Integer> numbers = new ArrayList<>();
