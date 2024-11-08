@@ -1,4 +1,4 @@
-package daythreeandfour;
+package ForFun;
 
 import java.util.Scanner;
 
