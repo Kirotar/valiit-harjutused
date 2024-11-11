@@ -1,5 +1,6 @@
 package ForFun;
 
+import java.util.Map;
 import java.util.Scanner;
 
 public class ForFun {
@@ -7,7 +8,6 @@ public class ForFun {
         Scanner sc = new Scanner(System.in);
         // askUsername(sc); //Pass sc on so there are not multiple instances
         sc.close();       // Close Scanner after use
-
 
         //Understanding "return":
 
