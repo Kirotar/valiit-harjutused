@@ -1,6 +1,5 @@
-package ForFun;
+package forFun;
 
-import java.util.Map;
 import java.util.Scanner;
 
 public class ForFun {
