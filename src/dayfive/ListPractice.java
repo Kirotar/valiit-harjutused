@@ -4,7 +4,8 @@ package dayfive;
 
 import java.util.ArrayList;
 import java.util.List;
-// import java.util.Collections;  // Import the Collections class
+// import java.util.Collections;  // Import the Collections class to sort alphabetically, numerically Collections.sort(myNumbers);
+//Collections.sort(myNumbers, Collections.reverseOrder()); - sort in reverse order
 
 public class ListPractice {
     //LIST
@@ -13,7 +14,11 @@ public class ListPractice {
     Most important methods: add(), get(), remove(), set()
      */
     public static void main(String[] args) {
-        List<Integer> numbers = new ArrayList<>();
+        list();
+    }
+
+        private static void homework() {
+            List<Integer> numbers = new ArrayList<>();
 
             for (int i = 1; i <= 10; i++) {
                 numbers.add(i);
