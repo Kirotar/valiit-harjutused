@@ -246,16 +246,16 @@ public class SetAndMap {
         int compounded = sc.nextInt(); //n number of times the interest is componded in a year
         int count = 1;
         double rate = getRate(sc);
-        double result2 = initialMoney * (Math.pow((1 + (rate / compounded)), compounded * years)); //A amount of money accumulated after interest(principal + interest)
-        System.out.println(result2);
+        double result = initialMoney * (Math.pow((1 + (rate / compounded)), compounded * years)); //A amount of money accumulated after interest(principal + interest)
+        System.out.println(result);
 
         //Calculations written out
    /*     double first = (1 + (rate / compounded));
         double second = compounded * years;
         double third = Math.pow(first, second);
-        double result = initialMoney * third; */
+        double result2 = initialMoney * third; */
 
-        //System.out.println(result);
+        //System.out.println(result2);
 
         /*A amount of money accumulated after interest(principal + interest)
         P is the principal amount (initial amount of money) - user input?
@@ -264,7 +264,6 @@ public class SetAndMap {
         t time the money is invested in years - user input
         A=P(1+(r/n))astmes n*t
         double result2 = initialMoney(Math.pow((1 + (rate / compounded)), compounded * years)
-
          */
     }
 
