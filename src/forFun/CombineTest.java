@@ -5,8 +5,40 @@ import java.util.Scanner;
 public class CombineTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        guessTheNumber(sc);
+        //guessTheNumber(sc);
+        guessTwo(sc);
         sc.close();
+    }
+
+    private static void guessTwo(Scanner sc) {
+        int randomNum = (int) (Math.random() * 10) + 1;
+        System.out.println(randomNum);
+        int i = 0;
+        String decision;
+        boolean yn;
+        while (i < 1) {
+            System.out.println("Guess a number between 1 and 10: ");
+            int number = sc.nextInt();
+            if (!(number == randomNum)) {
+                System.out.println("Wrong number! Guess again? Y/N");
+                decision = sc.next();
+                switch (decision) {
+                    case "N":
+                        yn = false;
+                        System.out.println("Goodbye!");
+                        break;
+                    case "Y":
+                        yn = true;
+                    /*default:
+                        System.out.println("Please enter again. Y/N.");*/
+                }
+            } else {
+                System.out.println("Correct guess!");
+                break;
+            }
+            i--;
+        }
+
     }
 
     private static void guessTheNumber(Scanner sc) {
