@@ -1,0 +1,55 @@
+{
+  "Three people": [
+    {
+      "name": "John",
+      "age": 30,
+      "address": "Long street, Tallinn",
+      "kids": [
+        {
+          "name": "Jane",
+          "age": 7,
+          "isUnderaged": true
+        },
+        {
+          "name": "Joe",
+          "age": null,
+          "isUnderaged": null
+        }
+      ]
+    },
+    {
+      "name": "Jane",
+      "age": 22,
+      "address": "Old street, Tartu",
+      "kids": [
+        {
+          "name": "Suzy",
+          "age": 1,
+          "isUnderaged": true
+        },
+        {
+          "name": "Sandra",
+          "age": 2.5,
+          "isUnderaged": true
+        }
+      ]
+    },
+    {
+      "name": "Mark",
+      "age": 76,
+      "address": "Church street, Rakvere",
+      "kids": [
+        {
+          "name": "Joanne",
+          "age": 51,
+          "isUnderaged": false
+        },
+        {
+          "name": "Ralph",
+          "age": 37,
+          "isUnderaged": false
+        }
+      ]
+    }
+  ]
+}

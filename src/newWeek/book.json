@@ -1,0 +1,16 @@
+{
+  "Books": [
+    {
+      "title": "Adventure",
+      "rating": 5
+    },
+    {
+      "title": "History",
+      "rating": 2
+    },
+    {
+      "title": "Romace",
+      "rating": 4.5
+    }
+  ]
+}
