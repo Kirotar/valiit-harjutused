@@ -52,7 +52,7 @@ public class CombineTest {
                 switch (decision) {
                     case "N":
                         System.out.println("Goodbye!");
-                        repeat = false;
+                        repeat = false; //sets the repeat value to false so loop is not repeated
                         break;
                     case "Y":
                         repeat = true;
