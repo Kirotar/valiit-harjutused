@@ -13,6 +13,21 @@ public class Standin {
         sc.close();
     }
 
+
+    private static void equals (){
+    //To compare Strings use equals, because '==' checks for reference equality (if they point to the same memory location,
+        // but with objects each has their own location),
+        // equals() checks for content equality
+    String str1 = "hello";
+    String str2 = "hello";
+    String str3 = new String ("hello");
+
+    System.out.println (str1==str2);
+    System.out.println (str1==str3);
+    System.out.println(str1.equals(str3));
+    }
+
+
     private static void season(Scanner sc) {
         int season;
         System.out.println("Insert month (1-12) to view what season it is in:");
