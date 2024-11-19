@@ -1,11 +1,12 @@
-package newWeek;
+package newweek;
 
 import java.util.Scanner;
 
-public class Standin {
+public class SwitchPractice {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        //dayOfWeek(sc);
+        dayOfWeek(sc);
+        switchTry();
         //calculator(sc);
         //grading(sc);
         //months(sc);

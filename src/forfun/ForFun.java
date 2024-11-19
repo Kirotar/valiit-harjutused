@@ -1,4 +1,4 @@
-package forFun;
+package forfun;
 
 import java.util.Scanner;
 
