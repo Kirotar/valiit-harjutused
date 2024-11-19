@@ -84,8 +84,8 @@ public class Bank {
     }
 
     private static void atmMenu(Scanner sc, BankUsers user) {
-        System.out.println("Insert '1' if you wish to check your current balance, '2' if you wish to withdraw money, " +
-                "'3' if you wish to deposit money and '4' if you wish to change your PIN.");
+        System.out.println("Insert '1' if you wish to check your current balance, \n'2' if you wish to withdraw money, " +
+                "\n'3' if you wish to deposit money, \n'4' if you wish to change your PIN, \n'5' to exit");
         int choice = sc.nextInt();
         switch (choice) {
             case 1:
@@ -99,6 +99,9 @@ public class Bank {
                 break;
             case 4:
                 changePIN(sc, user);
+                break;
+            case 5:
+                System.out.println("Goodbye.");
                 break;
             default:
                 System.out.println("Invalid choice.");
