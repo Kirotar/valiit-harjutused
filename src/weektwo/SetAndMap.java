@@ -1,4 +1,4 @@
-package newweek;
+package weektwo;
 
 import java.util.*;
 

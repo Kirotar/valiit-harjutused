@@ -1,4 +1,4 @@
-package newweek;
+package weektwo;
 
 public class deBug {
     public static void main(String[] args) {
